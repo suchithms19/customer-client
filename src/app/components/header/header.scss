@@ -1,4 +1,4 @@
-.header-container {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,33 +10,33 @@
     top: 0;
     z-index: 1000;
 
-    .logo {
-        .kaplan-logo {
+    &__logo {
+        &-img {
             height: 40px;
             width: auto;
             object-fit: contain;
         }
     }
 
-    .user-info {
+    &__user {
         display: flex;
         align-items: center;
         gap: 0.5rem;
+        cursor: pointer;
         
-        i {
+        &:hover {
+            opacity: 0.9;
+        }
+
+        &-icon {
             color: #444;
             font-size: 1.1rem;
         }
 
-        span {
+        &-name {
             color: #000000;
             font-weight: 500;
             font-size: 0.95rem;
-        }
-
-        &:hover {
-            cursor: pointer;
-            opacity: 0.9;
         }
     }
 }
