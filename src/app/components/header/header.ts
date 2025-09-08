@@ -7,5 +7,5 @@ import { Component, signal } from '@angular/core';
   styleUrl: './header.scss'
 })
 export class Header {
-  username = signal('Suchith M S'); 
+  username = signal('Rahul J'); 
 }
