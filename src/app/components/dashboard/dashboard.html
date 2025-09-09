@@ -1,16 +1,16 @@
 <div class="dashboard-container">
   <mat-tab-group>
-    <!-- Create Tab -->
+    
     <mat-tab label="Create">
       <form class="dashboard-form" [formGroup]="dashboardForm" (ngSubmit)="onSubmit()">
         
-        <!-- Name -->
+       
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Name</mat-label>
           <input matInput formControlName="name" placeholder="Enter your name">
         </mat-form-field>
 
-        <!-- Gender Dropdown -->
+        
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Gender</mat-label>
           <mat-select formControlName="gender">
@@ -20,7 +20,7 @@
           </mat-select>
         </mat-form-field>
 
-        <!-- DOB Datepicker -->
+        
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Date of Birth</mat-label>
           <input matInput [matDatepicker]="picker" formControlName="dob">
@@ -28,18 +28,18 @@
           <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
 
-        <!-- Mobile -->
+        
         <mat-form-field appearance="outline" class="full-width">
           <mat-label>Mobile</mat-label>
           <input matInput formControlName="mobile" placeholder="Enter mobile number">
         </mat-form-field>
 
-        <!-- Submit Button -->
+        
         <button mat-raised-button color="primary" type="submit">Submit</button>
       </form>
     </mat-tab>
 
-    <!-- List Tab -->
+    
     <mat-tab label="List">
       <div class="list-section">
         <h3>Submitted Entries</h3>
